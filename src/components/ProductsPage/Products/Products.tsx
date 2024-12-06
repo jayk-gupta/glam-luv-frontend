@@ -1,8 +1,9 @@
-import React, { useEffect } from "react";
+import  { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { AppDispatch } from "../../../redux/store";
 import { fetchProducts } from "../../../redux/productsSlice";
 import ProductCard from "../Product/ProductCard";
+import { RootState } from "@reduxjs/toolkit/query";
 
 function Products() {
   const dispatch = useDispatch<AppDispatch>();
