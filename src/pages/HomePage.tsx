@@ -3,8 +3,8 @@ import Categories from "../components/ProductsPage/ShopByCategory/Categories";
 import TagUsBanner from "../components/HomePage/TagUs Banner/TagUsBanner";
 import Reviews from "../components/HomePage/Reviews";
 import { useDispatch, useSelector } from "react-redux";
-import { AppDispatch } from "../redux/store";
-import { RootState } from "@reduxjs/toolkit/query";
+import { AppDispatch ,RootState} from "../redux/store";
+
 import { fetchProducts } from "../redux/productsSlice";
 
 function HomePage() {
