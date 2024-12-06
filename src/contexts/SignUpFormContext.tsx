@@ -71,8 +71,9 @@ export const RegisterFormProvider: React.FC<{ children: ReactNode }> = ({
       return;
     }
     try {
-      const response = await registerUser({ email, password });
+     await registerUser({ email, password });
       alert("Registration successful");
+      
       navigate("/login");
     } catch (err) {
       console.error("Error registering user");

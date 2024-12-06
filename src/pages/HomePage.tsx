@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import  { useEffect } from "react";
 import Categories from "../components/ProductsPage/ShopByCategory/Categories";
 import TagUsBanner from "../components/HomePage/TagUs Banner/TagUsBanner";
 import Reviews from "../components/HomePage/Reviews";
