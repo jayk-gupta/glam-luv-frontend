@@ -16,7 +16,7 @@ function HomePage() {
   }, [dispatch, filters]);
   return (
     <div>
-      <img src="public/LAG_holiday_shine_collection_web_desktop_banner_2.jpeg" />
+      <img src="/LAG_holiday_shine_collection_web_desktop_banner_2.jpeg" />
       <div className="flex flex-col justify-center items-center">
         <Categories />
         <img src="/LAG_lip_haze_web_desktop_banner_2.jpg" />
