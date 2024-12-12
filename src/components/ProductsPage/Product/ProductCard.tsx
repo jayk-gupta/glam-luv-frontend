@@ -23,17 +23,26 @@ const ProductCard: React.FC<ProductCardProps> = ({
   return (
     <div
       key={id}
-      className="bg-white rounded-lg p-4 shadow-md flex flex-col gap-2"
+      className="bg-white rounded-lg p-4 shadow-md flex justify-between flex-col gap-2"
     >
       <img
         src={img_url}
         alt={name}
-        className="h-96 object-center rounded-lg mb-4"
+        className=" object-center rounded-lg p-2"
       />
-      <h3 className="font-bold capitalize">{brand} <span>{name}</span></h3>
-      <p className="text-sm text-gray-700">{category}</p>
-      <p className="text-primary font-bold">{`$${price}`}</p>
-    <button className="w-full bg-white border-2 border-primary text-primary hover:bg-primary hover:text-white py-2 my-4">Add to Bag</button>
+      <div className="content">
+        <h3 className="font-bold capitalize xl: text-sm">
+          {brand} <span>{name}</span>
+        </h3>
+        <p className="text-sm text-gray-700">{category}</p>
+        <p className="text-primary font-bold">{`$${price}`}</p>
+        <button className="w-full bg-white border-2 border-primary text-primary hover:bg-primary hover:text-white py-2 my-4
+        sm:text-sm xl:py-1 xl:text-sm
+        
+        ">
+          Add to Bag
+        </button>
+      </div>
     </div>
   );
 };

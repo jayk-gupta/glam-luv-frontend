@@ -6,6 +6,7 @@ import { useDispatch } from "react-redux";
 import { AppDispatch } from "../redux/store";
 import { useEffect } from "react";
 import { fetchProducts } from "../redux/productsSlice";
+import CategoriesNav from "../components/Navbar/CategoriesNav";
 
 
 function HomePage() {
@@ -17,6 +18,7 @@ function HomePage() {
 
   return (
     <div className="  ">
+   
       <img
         src="/LAG_holiday_shine_collection_web_desktop_banner_2.jpeg"
         className="md:w-full"
