@@ -7,6 +7,9 @@ interface Product {
   price: string;
   brand: string;
   [key: string]: any;
+  product_type: string;
+  category: string
+  img_url:string
 }
 
 interface Filters {
