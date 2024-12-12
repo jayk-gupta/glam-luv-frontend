@@ -1,4 +1,4 @@
-import  { useEffect } from "react";
+import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { AppDispatch, RootState } from "../../../redux/store";
 import ProductCard from "../Product/ProductCard";
@@ -13,6 +13,7 @@ interface ProductCardProps {
   price: string;
   category: string;
   product_type: string;
+  api_featured_image:string
 }
 
 function Products() {
@@ -59,11 +60,12 @@ function Products() {
               key={product.id}
               name={product.name}
               brand={product.brand}
-              img_url={product.img_url} // Fixed property name
+              img_url={product.api_featured_image}
               price={product.price}
               category={product.category}
               product_type={product.product_type}
               id={product.id}
+              api_featured_image={product.api_featured_image}
             />
           ))}
         </div>
